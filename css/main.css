@@ -185,7 +185,7 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
   color: #555;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto', 'Roboto', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -1184,12 +1184,12 @@ pre .javascript .function {
   font-size: 48px;
   color: #f5f5f5;
   font-weight: normal;
-  font-family: 'Lobster Two', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lobster Two', 'Roboto', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #999;
+  font-size: 14px;
+  color: #e65100;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1279,7 +1279,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto', 'Roboto', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1557,7 +1557,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto', 'Roboto', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1957,8 +1957,8 @@ img:hover {
 .site-description {
   margin-top: 5px;
   text-align: center;
-  font-size: 14px;
-  color: #999;
+  font-size: 13px;
+  color: #e65100;
 }
 @-moz-keyframes play {
   0% {
@@ -2092,7 +2092,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #36ffe2;
+  background: #8317ee;
 }
 .links-of-blogroll {
   font-size: 13px;
