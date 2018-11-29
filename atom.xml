@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hcrlp.com/"/>
-  <updated>2018-11-23T02:41:37.732Z</updated>
+  <updated>2018-11-29T08:46:09.438Z</updated>
   <id>http://www.hcrlp.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语义分割-PSPNET</title>
+    <link href="http://www.hcrlp.com/2018/11/29/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2-PSPNET/"/>
+    <id>http://www.hcrlp.com/2018/11/29/语义分割-PSPNET/</id>
+    <published>2018-11-29T08:19:30.000Z</published>
+    <updated>2018-11-29T08:46:09.438Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> PSPNET:</strong> <a href="https://arxiv.org/abs/1612.01105" target="_blank" rel="noopener">Pyramid Scene Parsing Network</a></p><p><strong>From :</strong> CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition)</p><p>代码：</p><ul><li><p><a href="https://github.com/Vladkryvoruchko/PSPNet-Keras-tensorflow" target="_blank" rel="noopener">PSPnet-Keras-TensorFlow</a></p></li><li><p><a href="https://github.com/Lextal/pspnet-pytorch" target="_blank" rel="noopener">PSPnet-Pytorch</a></p></li></ul><p>效果：</p><p>&lt;img src=”<a href="http://owv7la1di.bkt.clouddn.com/blog/180105/B894IhhI8G.png&quot;,width=&quot;800&quot;&gt;" target="_blank" rel="noopener">http://owv7la1di.bkt.clouddn.com/blog/180105/B894IhhI8G.png&quot;,width=&quot;800&quot;&gt;</a></p><h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>本文提出的金字塔池化模块( pyramid pooling module)能够<strong>聚合不同区域的上下文信息</strong>,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt; PSPNET:&lt;/strong&gt; &lt;a href=&quot;https://arxiv.org/abs/1612.01105&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Pyramid Scene Parsing Network&lt;/a&gt;&lt;/p&gt;
+      
+    
+    </summary>
+    
+      <category term="Segmentation" scheme="http://www.hcrlp.com/categories/Segmentation/"/>
+    
+    
+      <category term="Paper" scheme="http://www.hcrlp.com/tags/Paper/"/>
+    
+  </entry>
   
   <entry>
     <title>Pytorch 参数初始化</title>

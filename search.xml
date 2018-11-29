@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[语义分割-PSPNET]]></title>
+    <url>%2F2018%2F11%2F29%2F%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2-PSPNET%2F</url>
+    <content type="text"><![CDATA[PSPNET: Pyramid Scene Parsing Network From : CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition) 代码： PSPnet-Keras-TensorFlow PSPnet-Pytorch 效果： &lt;img src=”http://owv7la1di.bkt.clouddn.com/blog/180105/B894IhhI8G.png&quot;,width=&quot;800&quot;&gt; Abstract本文提出的金字塔池化模块( pyramid pooling module)能够聚合不同区域的上下文信息,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。]]></content>
+      <categories>
+        <category>Segmentation</category>
+      </categories>
+      <tags>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Pytorch 参数初始化]]></title>
     <url>%2F2018%2F11%2F23%2FPytorch-%E5%8F%82%E6%95%B0%E5%88%9D%E5%A7%8B%E5%8C%96%2F</url>
     <content type="text"><![CDATA[Pytorch 提供了很多不同的参数初始化函数： torch.nn.init.constant_(tensor,val) torch.nn.init.normal_(tensor,mean=0,std=1) torch.nn.init.xavier_uniform_(tensor,gain=1) 更多的可以参考：http://pytorch.org/docs/nn.html#torch-nn-init 注意上面的初始化函数的参数tensor，虽然写的是tensor，但是也可以是Variable类型的。而神经网络的参数类型Parameter是Variable类的子类，所以初始化函数可以直接作用于神经网络参数。 示例：123self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3)init.xavier_uniform_(self.conv1.weight)init.constant_(self.conv1.bias, 0.1) 上面的语句是对网络的某一层参数进行初始化。如何对整个网络的参数进行初始化定制呢？12345678910def xavier(parm): init.xavier_normal_(parm)def weights_init(m): classname=m.__class__.__name__ if classname.find('Conv') != -1: xavier(m.weight.data) xavier(m.bias.data)net = Net()net.apply(weights_init) #apply函数会递归地搜索网络内的所有module并把参数表示的函数应用到所有的module上 不建议访问以下划线为前缀的成员，他们是内部的，如果有改变不会通知用户。更推荐的一种方法是检查某个module是否是某种类型： 1234567def xavier(parm): init.xavier_normal_(parm)def weights_init(m): if isinstance(m, nn.Conv2d): xavier(m.weight.data) xavier(m.bias.data)]]></content>
