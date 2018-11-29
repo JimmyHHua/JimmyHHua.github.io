@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[语义分割-PSPNET]]></title>
     <url>%2F2018%2F11%2F29%2F%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2-PSPNET%2F</url>
-    <content type="text"><![CDATA[PSPNET: Pyramid Scene Parsing Network From : CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition) 代码： PSPnet-Keras-TensorFlow PSPnet-Pytorch 效果： &lt;img src=”http://owv7la1di.bkt.clouddn.com/blog/180105/B894IhhI8G.png&quot;,width=&quot;800&quot;&gt; Abstract本文提出的金字塔池化模块( pyramid pooling module)能够聚合不同区域的上下文信息,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。]]></content>
+    <content type="text"><![CDATA[PSPNET: Pyramid Scene Parsing Network From : CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition) 代码： PSPnet-Keras-TensorFlow PSPnet-Pytorch 效果： 对比传统方法： Abstract本文提出的金字塔池化模块( pyramid pooling module)能够聚合不同区域的上下文信息,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。]]></content>
       <categories>
         <category>Segmentation</category>
       </categories>
