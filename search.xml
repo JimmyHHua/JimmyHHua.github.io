@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Yolo2 训练自己数据集]]></title>
+    <url>%2F2018%2F12%2F10%2FYolo2-%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E6%95%B0%E6%8D%AE%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[添加数据分类的各个类别名称文 data/rabbit.names: 添加配置文件/cfg/rabbit.data，并且修改自己需要的类别和训练数据集： 修改网络配置 /cfg/yolov2-tiny-voc.cfg: 修改 Makefile 改成GPU训练： 运行命令：12345* 训练：./darknet detector train cfg/rabbit.data cfg/yolov2-tiny.cfg darknet19_448.conv.23* 测试：./darknet detector test cfg/rabbit.data cfg/yolov2-tiny.cfg backup/tiny-yolo-1/yolov2-tiny_50000.weights data/pic_1350.png* recall：./darknet detector recall cfg/rabbit.data cfg/yolov2-tiny.cfg backup/tiny-yolo-1/yolov2-tiny_50000.weights]]></content>
+      <categories>
+        <category>Computer vision</category>
+      </categories>
+      <tags>
+        <tag>yolo2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[语义分割-PSPNET]]></title>
     <url>%2F2018%2F11%2F29%2F%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2-PSPNET%2F</url>
     <content type="text"><![CDATA[PSPNET: Pyramid Scene Parsing Network From : CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition) 代码： PSPnet-Keras-TensorFlow PSPnet-Pytorch 效果： 对比传统方法： Abstract本文提出的金字塔池化模块( pyramid pooling module)能够聚合不同区域的上下文信息,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。]]></content>

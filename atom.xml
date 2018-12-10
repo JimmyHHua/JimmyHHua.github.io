@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hcrlp.com/"/>
-  <updated>2018-11-29T09:11:58.572Z</updated>
+  <updated>2018-12-10T10:38:41.237Z</updated>
   <id>http://www.hcrlp.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Yolo2 训练自己数据集</title>
+    <link href="http://www.hcrlp.com/2018/12/10/Yolo2-%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
+    <id>http://www.hcrlp.com/2018/12/10/Yolo2-训练自己数据集/</id>
+    <published>2018-12-10T10:36:03.000Z</published>
+    <updated>2018-12-10T10:38:41.237Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>添加数据分类的各个类别名称文 data/rabbit.names:</li></ol><p><a href="https://i.loli.net/2018/12/10/5c0e407334b25.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/12/10/5c0e407334b25.png" alt="1.png"></a></p><ol start="2"><li>添加配置文件/cfg/rabbit.data，并且修改自己需要的类别和训练数据集：</li></ol><p><a href="https://i.loli.net/2018/12/10/5c0e407341624.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/12/10/5c0e407341624.png" alt="2.png"></a></p><ol start="3"><li>修改网络配置 /cfg/yolov2-tiny-voc.cfg:</li></ol><p><a href="https://i.loli.net/2018/12/10/5c0e40733ea05.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/12/10/5c0e40733ea05.png" alt="3.png"></a></p><p><a href="https://i.loli.net/2018/12/10/5c0e40735f4a6.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/12/10/5c0e40735f4a6.png" alt="4.png"></a></p><ol start="4"><li>修改 Makefile 改成GPU训练：</li></ol><p><a href="https://i.loli.net/2018/12/10/5c0e4073649c9.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/12/10/5c0e4073649c9.png" alt="5.png"></a></p><ol start="5"><li>运行命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* 训练：./darknet detector train cfg/rabbit.data cfg/yolov2-tiny.cfg darknet19_448.conv.23</span><br><span class="line"></span><br><span class="line">* 测试：./darknet detector <span class="built_in">test</span> cfg/rabbit.data cfg/yolov2-tiny.cfg backup/tiny-yolo-1/yolov2-tiny_50000.weights data/pic_1350.png</span><br><span class="line"></span><br><span class="line">* recall：./darknet detector recall cfg/rabbit.data cfg/yolov2-tiny.cfg backup/tiny-yolo-1/yolov2-tiny_50000.weights</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;添加数据分类的各个类别名称文 data/rabbit.names:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.loli.net/2018/12/10/5c0e407334b25.png&quot; target=&quot;_blank&quot; rel=&quot;noop
+      
+    
+    </summary>
+    
+      <category term="Computer vision" scheme="http://www.hcrlp.com/categories/Computer-vision/"/>
+    
+    
+      <category term="yolo2" scheme="http://www.hcrlp.com/tags/yolo2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>语义分割-PSPNET</title>
     <link href="http://www.hcrlp.com/2018/11/29/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2-PSPNET/"/>
     <id>http://www.hcrlp.com/2018/11/29/语义分割-PSPNET/</id>
     <published>2018-11-29T08:19:30.000Z</published>
-    <updated>2018-11-29T09:11:58.572Z</updated>
+    <updated>2018-12-05T10:36:25.532Z</updated>
     
     <content type="html"><![CDATA[<p><strong> PSPNET:</strong> <a href="https://arxiv.org/abs/1612.01105" target="_blank" rel="noopener">Pyramid Scene Parsing Network</a></p><p><strong>From :</strong> CVPR 2017(IEEE Conference on Computer Vision and Pattern Recognition)</p><p><strong>代码：</strong></p><ul><li><p><a href="https://github.com/Vladkryvoruchko/PSPNet-Keras-tensorflow" target="_blank" rel="noopener">PSPnet-Keras-TensorFlow</a></p></li><li><p><a href="https://github.com/Lextal/pspnet-pytorch" target="_blank" rel="noopener">PSPnet-Pytorch</a></p></li></ul><p><strong>效果：</strong></p><p><img src="https://upload-images.jianshu.io/upload_images/11679057-cb0abf4f5eaf8f4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" width="700"></p><p><strong>对比传统方法：</strong></p><p><img src="https://upload-images.jianshu.io/upload_images/11679057-59d0704d1924bf7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" width="700"></p><h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>本文提出的金字塔池化模块( pyramid pooling module)能够<strong>聚合不同区域的上下文信息</strong>,从而提高获取全局信息的能力。实验表明这样的先验表示(即指代PSP这个结构)是有效的，在多个数据集上展现了优良的效果。</p>]]></content>
     
