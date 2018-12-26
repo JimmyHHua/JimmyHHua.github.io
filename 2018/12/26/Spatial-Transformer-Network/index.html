@@ -147,11 +147,11 @@
 <meta property="og:description" content="AbstractSpatial transformer networks are a generalization of differentiable attention to any spatial transformation. Spatial transformer networks (STN for short) allow a neural network to learn how to">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/12/26/5c233ca7b417f.png">
-<meta property="og:image" content="https://img-blog.csdn.net/20180421221610579?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5MjQ0ODU1OTgz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://libai.91iot.net/DFRrk3bK">
 <meta property="og:image" content="https://i.loli.net/2018/12/26/5c2343efed9e9.png">
 <meta property="og:image" content="https://i.loli.net/2018/12/26/5c2343f083430.png">
 <meta property="og:image" content="https://i.loli.net/2018/12/26/5c233ca762f16.png">
-<meta property="og:updated_time" content="2018-12-26T09:36:30.603Z">
+<meta property="og:updated_time" content="2018-12-26T09:47:54.841Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spatial Transformer Network">
 <meta name="twitter:description" content="AbstractSpatial transformer networks are a generalization of differentiable attention to any spatial transformation. Spatial transformer networks (STN for short) allow a neural network to learn how to">
@@ -405,7 +405,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-26T17:36:30+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-26T17:47:54+08:00">
                 2018-12-26
               </time>
             
@@ -512,7 +512,7 @@
 <ul>
 <li>The localization network is a regular CNN which regresses the transformation parameters. The transformation is never learned explicitly from this dataset, instead the network learns automatically the spatial transformations that enhances the global accuracy.</li>
 <li>The grid generator generates a grid of coordinates in the input image corresponding to each pixel from the output image.</li>
-<li>The sampler uses the parameters of the transformation and applies it to the input image.<br><img src="https://img-blog.csdn.net/20180421221610579?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5MjQ0ODU1OTgz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="image"></li>
+<li>The sampler uses the parameters of the transformation and applies it to the input image.<br><img src="http://libai.91iot.net/DFRrk3bK" alt="image"></li>
 </ul>
 <h6 id="Localisation-Network"><a href="#Localisation-Network" class="headerlink" title="Localisation Network"></a>Localisation Network</h6><p>The localisation network take the input feature map <strong>(W,H,C)</strong>, and retrun the outputs <strong>θ</strong> (spatial transformer parameters). We can get the parameters no matter fully connection or convolutional network.</p>
 <h6 id="Grid-Generator"><a href="#Grid-Generator" class="headerlink" title="Grid Generator"></a>Grid Generator</h6><p>As we got the  <strong>θ</strong> parameters via the Localisation Net, and then using the affine transformation to transfer the pixel position from A to B.</p>
